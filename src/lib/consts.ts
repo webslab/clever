@@ -11,7 +11,6 @@ export const SITE_DESCRIPTION = "Welcome to Clever!";
 // TODO: Change to production URL
 export const DB = {
 	url: `${WEBSLAB_SITE}/db`,
-	// url: `https://base.ipsitec.es/db`,
 	config: {
 		access: "user",
 		database: WEBSLAB_PROJECT,
