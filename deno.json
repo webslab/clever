@@ -1,6 +1,6 @@
 {
 	"name": "clever",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"tasks": {
 		"dev": "astro dev",
 		"astro": "astro",
