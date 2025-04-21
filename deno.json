@@ -19,6 +19,7 @@
 		"@astrojs/lit": "npm:@astrojs/lit@^4.3.0",
 		"@astrojs/sitemap": "npm:@astrojs/sitemap@^3.2.1",
 		"@astrojs/solid-js": "npm:@astrojs/solid-js@^5.0.4",
+		"@lit-labs/ssr-client": "npm:@lit-labs/ssr-client@^1.1.7",
 		"@webcomponents/template-shadowroot": "npm:@webcomponents/template-shadowroot@^0.2.1",
 		"astro": "npm:astro@^4.16.7",
 		"astro-purgecss": "npm:astro-purgecss@^4.6.1",
