@@ -2,73 +2,25 @@
 import { Image } from 'astro:assets'
 
 import BaseLayout from '$layouts/Base.astro'
-import News from '$components/home/News.astro'
 
-import logoP from '$images/logo-clever.png'
+import logoP from '$images/logo-base-1080_1080.png'
 import logoC from '$images/logo-conselleria-rgb_rojo_cast.png'
 ---
-
-<style>
-@media (prefers-color-scheme: dark) {
-  #index-logo-reconnected {
-    background-color: rgba(var(--bs-white-rgb), .3);
-  }
-}
-</style>
 
 <BaseLayout
   auth={false}
   admin={false}
-  title="Bienvenido a"
-  description="Home page of the project">
-
-  <section class="px-0 px-md-4 my-4 py-2 py-md-4 mx-auto text-center">
-    <div
-      id="index-logo-reconnected"
-      class="col col-md-10 mx-auto mb-3 mb-md-5 p-1 p-md-4 rounded">
-      <Image
-        class="img-fluid"
-        src={logoP}
-        format={'webp'}
-        widths={[240, 540, 720, logoP.width]}
-        sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${logoP.width}px`}
-        alt="Clever project logo" />
-    </div>
-
-    <div>
-      <h2 class="mb-4 h4 text-primary">
-        Changing Low Back Pain Employing Virtual Enhanced Reality: Analyzing the Appreciation of Body Functionality and Plasticity of Body Schema
-      </h2>
-
-      <p class="px-4">
-        Convocatoria 2020 Proyectos de I+D+i – RTI Tipo Coordinado en el marco del Programa Estatal de I+D+i Orientada a los Retos de la Sociedad del Plan de Investigación Científica y Técnica y de Innovación 2017-2020
-      </p>
-
-      <!-- <p class="px-4"> -->
-      <!--   <span class="fw-bold">Referencia:</span> PID2020-115609RB-C21 -->
-      <!-- </p> -->
-    </div>
+  title="Welcome to Base"
+  description="Home page">
+  <section class="col col-md-6 mx-auto">
+    <Image
+      class="img-fluid ratio ratio-1x1"
+      src={logoP}
+      format={'webp'}
+      widths={[240, 540, 720, logoP.width]}
+      sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${logoP.width}px`}
+      alt="Project Logo"/>
   </section>
-
-  <hr class="my-4" />
-
-  <section class="px-0 px-md-4 my-4 py-4 mx-auto">
-    <h3 class="text-center">Información:</h3>
-
-    <div class="row">
-      <div class="col-5 mx-auto text-end"><span class="fw-bold">Referencia:</span></div>
-      <div class="col-7 mx-auto"><small>PID2020-115609RB-C21</small></div>
-
-      <div class="col-5 mx-auto text-end"><span class="fw-bold">Año:</span></div>
-      <div class="col-7 mx-auto">PID2020-115609RB-C21</div>
-    </div>
-  </section>
-
-  <hr class="w-75 mx-auto my-4 border border-primary" />
-
-  <div class="mt-3">
-    <News />
-  </div>
 
   <div class="row">
     <div class="col-6 col-md-3 col-lg-3 mx-auto">
